@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Paris</h3>
+                    <p>Țara: Franța</p>
+                    <p>Orașul iubirii, renumit pentru Turnul Eiffel și muzee.</p>
+                    <p>Durata recomandată: 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p>Țara: Italia</p>
+                    <p>O incursiune în istorie, cu Colosseumul și ruinele antice.</p>
+                    <p>Durata recomandată: 5 zile</p>
+                </article>
+                <article class="card featured">
+                    <h3>Tokyo</h3>
+                    <p>Țara: Japonia</p>
+                    <p>Un mix fascinant de tehnologie modernă și temple tradiționale.</p>
+                    <p>Durata recomandată: 7 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Barcelona</h3>
+                    <p>Țara: Spania</p>
+                    <p>Arhitectură deosebită marca Gaudí și plaje însorite.</p>
+                    <p>Durata recomandată: 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>New York</h3>
+                    <p>Țara: SUA</p>
+                    <p>Orașul care nu doarme niciodată, celebru pentru Times Square.</p>
+                    <p>Durata recomandată: 6 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planifica">
+            <h2>Planifică excursia</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nume</label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destinație</label>
+                    <select id="destination" name="destination">
+                        <option value="">Alege...</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="days">Număr de zile</label>
+                    <input id="days" name="days" type="number">
+                </div>
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li>Folosiți încălțăminte foarte confortabilă pentru zilele lungi de mers.</li>
+                <li>Gustați din preparatele culinare locale (street food).</li>
+                <li>Verificați orarul de funcționare al obiectivelor turistice în avans.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Florea Alexandra Maria, 2026</p>
+    </footer>
+</body>
+</html>

@@ -130,3 +130,20 @@ button:disabled {
   text-align: center;
   color: #6b7280;
 }
+
+.panou {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10; /* Greșeala 6 */
+}
+
+.input-prag {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.panou h2 {
+  margin: 0; /* Greșeala 7 */
+}

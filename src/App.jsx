@@ -7,6 +7,7 @@ import FormularDestinatie from './components/FormularDestinatie.jsx';
 import ListaDestinatii from './components/ListaDestinatii.jsx';
 import Cautare from './components/Cautare.jsx';
 import './App.css';
+import PanouStatistici from './PanouStatistici';
 
 export default function App() {
   const [destinatii, setDestinatii] = useState([]);
@@ -19,9 +20,6 @@ export default function App() {
 useEffect(() => {
     async function incarca() {
       try {
-        // Pauză artificială de 2 secunde ca să poți admira caseta albastră!
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
         const date = await getDestinatii();
         setDestinatii(date);
       } catch (err) {
@@ -78,7 +76,7 @@ async function handleAdd(nouaDestinatie) {
     (d) => d.oras.toLowerCase().includes(text) || d.tara.toLowerCase().includes(text)
   );
 
-  return (
+return (
     <main>
       <h1>City Explorer</h1>
       <Rezumat 
@@ -96,6 +94,8 @@ async function handleAdd(nouaDestinatie) {
       ) : (
         <ListaDestinatii destinatii={afisate} onToggle={handleToggle} onDelete={handleDelete} />
       )}
+
+      <PanouStatistici destinatii={destinatii} />
     </main>
   );
-}
+} // <--- ACEASTA ESTE ACOLADA CARE LIPSIA ȘI DĂDEA EROAREA!
